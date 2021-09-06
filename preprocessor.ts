@@ -269,7 +269,7 @@ function reveal_code(lines: string[], start: number, end: number) {
    for(let t=start; t<=end; t++) {
       let r = regex.exec(lines[t]);
       if(r!==null && r.groups!==undefined) {
-         lines[t] = " ".repeat(r.groups.before.length) + r.groups.line;
+         lines[t] = "".repeat(r.groups.before.length) + r.groups.line;
       }
    }
 }
